@@ -1,0 +1,131 @@
+/* style.css - Modern one-page portfolio with gradients, glassmorphism, responsive layout */
+
+:root{
+  --bg-1: #f6fcff;
+  --grad-start: #00c6ff; /* teal-ish */
+  --grad-end: #ffd6a5; /* warm peach */
+  --glass-bg: rgba(255,255,255,0.6);
+  --card-shadow: 0 8px 30px rgba(16,24,40,0.08);
+  --accent: #007ea7;
+  --muted: #6b7280;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Poppins', sans-serif;
+  margin:0;
+  color:#0f1724;
+  background:linear-gradient(160deg,var(--grad-start),var(--grad-end));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:2rem}
+.section{padding:4rem 0}
+.section-title{font-family:'Poppins',sans-serif;font-weight:600;margin:0 0 1rem;color:#073b4c}
+.muted{color:var(--muted)}
+
+/* NAVBAR */
+.site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;background:linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.18));box-shadow:var(--card-shadow);border-radius:10px;margin:1rem;}
+.brand{font-weight:700;color:#042a2b;text-decoration:none}
+.nav-links{display:flex;gap:0.6rem;list-style:none;margin:0;padding:0}
+.nav-link{padding:0.6rem 0.9rem;border-radius:8px;color:#073b4c;text-decoration:none;font-weight:600;transition:all .25s}
+.nav-link:hover{transform:translateY(-2px);background:rgba(255,255,255,0.5)}
+.nav-link.active{background:linear-gradient(90deg, rgba(0,126,167,0.12), rgba(255,214,170,0.12));box-shadow:inset 0 -3px 0 rgba(0,0,0,0.02)}
+.nav-toggle{display:none;border:0;background:transparent;font-size:1.25rem}
+
+/* GLASS CARD */
+.glass{background:var(--glass-bg);border-radius:14px;padding:1.25rem;box-shadow:var(--card-shadow);border:1px solid rgba(255,255,255,0.45)}
+
+/* HERO */
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:2rem;align-items:center}
+.hero-card{padding:2rem}
+.name{font-family:'Poppins',sans-serif;font-size:2rem;margin:0}
+.role{color:var(--accent);font-weight:600;margin:0.4rem 0}
+.lead{color:var(--muted);line-height:1.6}
+.hero-ctas{margin-top:1rem;display:flex;gap:0.75rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;text-decoration:none;font-weight:600;transition:transform .18s,box-shadow .18s}
+.btn.primary{background:linear-gradient(90deg,var(--grad-start),var(--grad-end));color:white;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.btn.ghost{background:transparent;border:1px solid rgba(7,59,76,0.08);color:#073b4c}
+.btn:hover{transform:translateY(-4px)}
+
+.visual-card{display:flex;flex-direction:column;align-items:center;gap:1rem;padding:1.25rem}
+.avatar-shape{width:200px;height:200px;border-radius:28px;background:linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.05));box-shadow:0 12px 40px rgba(2,48,63,0.12);position:relative;}
+.avatar-shape.has-photo{background-size:cover;background-position:center;border-radius:50%;box-shadow:0 16px 48px rgba(2,48,63,0.16)}
+.quick-stats{list-style:none;padding:0;margin:0;width:100%}
+.quick-stats li{display:flex;justify-content:space-between;padding:0.5rem 0;border-top:1px dashed rgba(7,59,76,0.05);color:var(--muted)}
+.quick-stats li strong{color:#073b4c}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.about-card p{margin:0}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.skills-card h4{margin-top:0}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}
+.tags span{background:linear-gradient(90deg,#e6fbff,#fff2e0);padding:0.4rem 0.6rem;border-radius:8px;font-weight:600}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.project-card{padding:1rem;transition:transform .28s cubic-bezier(.2,.9,.2,1),box-shadow .28s}
+.project-card:hover{transform:translateY(-12px) rotate(-1deg);box-shadow:0 26px 60px rgba(2,48,63,0.14)}
+.project-card::before{content:'';position:absolute;left:0;top:0;right:0;height:6px;background:linear-gradient(90deg,var(--grad-start),var(--grad-end));border-radius:14px 14px 0 0;opacity:0;transform:translateY(-6px);transition:all .28s}
+.project-card{position:relative}
+.project-card:hover::before{opacity:1;transform:none}
+.project-tech{margin-top:0.8rem;color:var(--muted);font-weight:600}
+
+/* EDUCATION */
+.education-card{padding:1rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:1rem}
+.contact-form label{display:block;margin-bottom:0.6rem}
+.contact-form input,.contact-form textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(7,59,76,0.08);margin-top:0.25rem}
+.form-actions{display:flex;gap:0.6rem;margin-top:0.6rem}
+.contact-info .socials{display:flex;gap:0.6rem;margin-top:0.6rem}
+.icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.35));color:#073b4c;text-decoration:none}
+
+/* Sliding animations for sections */
+.slide-left{transform:translateX(-24px);opacity:0;transition:transform .6s cubic-bezier(.2,.9,.2,1),opacity .6s}
+.slide-right{transform:translateX(24px);opacity:0;transition:transform .6s cubic-bezier(.2,.9,.2,1),opacity .6s}
+.in-view.slide-left,.in-view.slide-right{transform:none;opacity:1}
+
+/* small tweaks for admin panel */
+.admin-panel summary{outline:none}
+
+/* Admin panel specifics */
+.admin-panel .glass{padding:0.9rem}
+.admin-row{display:flex;gap:0.6rem}
+.admin-row label{flex:1}
+.admin-panel input[type="text"],.admin-panel input[type="email"],.admin-panel textarea{width:100%;padding:0.5rem;border-radius:8px;border:1px solid rgba(7,59,76,0.08)}
+.admin-panel .btn{margin-top:0.4rem}
+
+
+
+/* FOOTER */
+.site-footer{padding:1.25rem 0;text-align:center;color:var(--muted)}
+
+/* RESPONSIVE */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr 280px}
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .skills-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav-links{display:none;position:absolute;top:64px;right:16px;flex-direction:column;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.8));padding:0.75rem;border-radius:10px}
+  .nav-toggle{display:block}
+  .hero-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+}
+
+/* SUBTLE APPEAR ANIMATIONS */
+.section{opacity:0;transform:translateY(10px);transition:opacity .6s ease, transform .6s ease}
+.section.in-view{opacity:1;transform:none}
+
+.small{font-size:0.9rem}

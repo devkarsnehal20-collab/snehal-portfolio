@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sneha Devkar — Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Sneha Devkar — Aspiring Python Full Stack Developer portfolio">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">Snehal Devgirikar</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-card glass">
+          <h1 class="name">Snehal Devgirikar</h1>
+          <p class="role">Aspiring Python Full Stack Developer</p>
+          <p class="lead">Third-year BBA (Computer Applications) student completing a Python Full Stack Development course. A motivated fresher focused on building practical, database-driven web applications.</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="visual-card">
+            <div class="avatar-shape"></div>
+            <ul class="quick-stats">
+              <li><strong>Role</strong><span>Aspiring Full Stack</span></li>
+              <li><strong>Level</strong><span>3rd Year - BBA (CA)</span></li>
+              <li><strong>Focus</strong><span>Backend & Databases</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="glass about-card">
+            <h3>Profile</h3>
+            <p>Third-year BBA (Computer Applications) student currently enrolled in a professional Python Full Stack Development course. A fresher with a strong willingness to learn and build end-to-end web applications, with particular interest in backend systems and database-driven projects.</p>
+          </div>
+          <div class="glass about-list">
+            <h3>Interests</h3>
+            <ul>
+              <li>Building real-world web applications</li>
+              <li>Backend systems & databases</li>
+              <li>Learning modern web frameworks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="glass skills-card">
+            <h4>Technical Skills</h4>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Python</span><span>Java</span>
+            </div>
+          </div>
+          <div class="glass skills-card">
+            <h4>Tools & Technologies</h4>
+            <div class="tags">
+              <span>VS Code</span><span>GitHub</span><span>GitHub Pages</span><span>XAMPP</span><span>Browser DevTools</span>
+            </div>
+          </div>
+          <div class="glass skills-card">
+            <h4>Soft Skills</h4>
+            <div class="tags">
+              <span>Communication</span><span>Presentation</span><span>Teamwork</span><span>Problem-solving</span><span>Willingness to learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">Student-level academic and practice projects — mini web apps using HTML, CSS, JavaScript, PHP, MySQL.</p>
+        <div class="projects-grid">
+          <article class="card project-card glass">
+            <h3>WedBliss — Wedding Planner (Academic)</h3>
+            <p>Wedding planner website where users can browse and purchase budget-friendly wedding planning packages. Includes booking flows and responsive UI tailored for event planning.</p>
+            <div class="project-tech">HTML • CSS • JavaScript</div>
+          </article>
+          <article class="card project-card glass">
+            <h3>Ecozi — Goes Green (Academic)</h3>
+            <p>E-commerce website focused on eco-friendly products. Implemented product listings, shopping cart and checkout prototypes, emphasizing sustainable product discovery.</p>
+            <div class="project-tech">PHP • MySQL • HTML • CSS</div>
+          </article>
+          <article class="card project-card glass">
+            <h3>Portfolio Website (This Project)</h3>
+            <p>Personal portfolio to present academic projects, skills, and contact information — designed with modern UI and responsive layout.</p>
+            <div class="project-tech">HTML • CSS • JavaScript</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card glass">
+          <h3>Computer / IT Related Background</h3>
+          <p>Currently pursuing a professional Python Full Stack Development course. Academic background in computer/IT related studies (student format).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="glass contact-form" novalidate>
+            <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+            <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+            <label>Message<textarea name="message" rows="5" required placeholder="Write a message..."></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send Message</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+            <p id="formFeedback" class="muted small"></p>
+          </form>
+
+          <div class="glass contact-info">
+            <h3>Get in touch</h3>
+            <p>Email: <a href="mailto:devkarsnehal20@gmail.com">devkarsnehal20@gmail.com</a></p>
+            <div class="socials">
+              <a href="#" aria-label="GitHub" class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 .5C5.73.5.75 5.48.75 11.74c0 4.93 3.19 9.1 7.61 10.57.56.1.76-.24.76-.53 0-.26-.01-1.12-.02-2.02-3.09.67-3.74-1.49-3.74-1.49-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.09.08 1.66 1.12 1.66 1.12.97 1.66 2.55 1.18 3.17.9.1-.7.38-1.18.69-1.45-2.47-.28-5.06-1.24-5.06-5.51 0-1.22.44-2.21 1.16-2.99-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.12 1.15.91-.25 1.88-.38 2.85-.38.97 0 1.94.13 2.85.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.54.23 2.68.11 2.96.72.78 1.16 1.77 1.16 2.99 0 4.28-2.6 5.23-5.08 5.51.39.33.74.99.74 2 0 1.44-.01 2.6-.01 2.96 0 .29.2.64.77.53 4.41-1.47 7.6-5.64 7.6-10.57C23.25 5.48 18.27.5 12 .5z"></path></svg></a>
+              <a href="#" aria-label="LinkedIn" class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="2"></rect><path d="M7 10v8M7 7v.01M17 10v5a2 2 0 0 1-2 2h-1"/></svg></a>
+            </div>
+            <p class="muted small">Or send a message using the form — I respond quickly to learning opportunities.</p>
+
+            <!-- Admin photo upload (client-side demo) -->
+            <details class="admin-panel" style="margin-top:.8rem">
+              <summary style="cursor:pointer;font-weight:600">Admin: Upload Profile Photo</summary>
+              <div style="margin-top:.6rem;display:flex;gap:.6rem;flex-direction:column">
+                <input id="photoInput" type="file" accept="image/*">
+                <button id="savePhotoBtn" class="btn primary">Save Photo (local)</button>
+                <small class="muted small">Uploaded photo is stored locally in your browser (for demo/admin use only).</small>
+              </div>
+            </details>
+
+              <!-- Admin: demo panel to edit site content (client-side only) -->
+              <details id="adminPanel" class="admin-panel" style="margin-top:1rem">
+                <summary style="cursor:pointer;font-weight:700">Admin Panel (Demo) — Edit Content</summary>
+                <div class="glass" style="margin-top:.8rem;display:grid;gap:.6rem">
+                  <div class="admin-row">
+                    <label>Full name<input id="adminName" type="text" value="Snehal Devgirikar"></label>
+                    <label>Role<input id="adminRole" type="text" value="Aspiring Python Full Stack Developer"></label>
+                  </div>
+                  <label>Email<input id="adminEmail" type="email" value="devkarsnehal20@gmail.com"></label>
+                  <label>About<textarea id="adminAbout" rows="4">Third-year BBA (Computer Applications) student currently enrolled in a professional Python Full Stack Development course. A fresher with a strong willingness to learn and build end-to-end web applications, with particular interest in backend systems and database-driven projects.</textarea></label>
+
+                  <div style="padding-top:.4rem;border-top:1px dashed rgba(7,59,76,0.06)">
+                    <strong>Projects (add new)</strong>
+                    <input id="projTitle" type="text" placeholder="Project title (e.g. WedBliss)">
+                    <input id="projTech" type="text" placeholder="Tech stack (comma separated)">
+                    <textarea id="projDesc" rows="3" placeholder="Short description"></textarea>
+                    <div style="display:flex;gap:.5rem">
+                      <button id="addProjectBtn" class="btn primary">Add Project</button>
+                      <button id="saveAdminBtn" class="btn primary">Save All Changes</button>
+                      <button id="resetAdminBtn" class="btn ghost">Reset Demo Data</button>
+                    </div>
+                    <small class="muted small">Changes are saved locally in this browser for demo purposes.</small>
+                  </div>
+                </div>
+              </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sneha Devkar — Aspiring Python Full Stack Developer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
